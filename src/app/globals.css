@@ -3,6 +3,9 @@
 :root {
   --background: #FFF8F6;
   --foreground: #040401;
+  --myorange: #FF3600;
+  --mywhite: white;
+  --myblack: #040401;
 
 }
 
@@ -17,3 +20,82 @@ body {
   background: white;
   color: black;
 }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+
+/* MyButton Start */
+
+.mybutton{
+  width: fit-content;
+  padding: 16px 25px;
+  background-color: var(--myorange);
+  color: var(--mywhite);
+  border-radius: 99px;
+  font-weight: 600;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.mybutton:hover{
+  background-color: var(--myblack);
+  color: var(--mywhite);
+}
+
+/* MyButton End */
+
+/* Navbar Start */
+
+#menu li{
+  width: fit-content;
+  padding: 14px 15px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#menu li a{
+  transition: color 0.5s ease;
+}
+
+#menu li a:hover{
+  color: var(--myorange);
+}
+
+.dropdown{
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-items{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 280px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 15px;
+  background-color: var(--myorange);
+  color: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.dropdown-items li a:hover{
+  color: var(--myblack) !important;
+}
+
+.dropdown:hover .dropdown-items{
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Navbar End */
