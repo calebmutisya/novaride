@@ -13,6 +13,12 @@
   --color-myblack:#040401;
   --color-mywhite:#FFF8F6;
   --color-myorange:#FF3600;
+
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
 }
 
 @theme {
@@ -51,21 +57,18 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
-@media (max-width: 768px) {
-  .container {
-    padding: 0 20px;
-  }
-}
+
 
 
 /* MyButton Start */
 
 .mybutton{
-  width: fit-content;
+  display: inline-block;
+  min-width: fit-content;
   padding: 16px 25px;
   background-color: var(--myorange);
   color: var(--mywhite);

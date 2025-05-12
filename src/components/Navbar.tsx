@@ -26,16 +26,16 @@ export default function Navbar() {
   return (
     <nav className=' text-myblack relative '>
         {/* <!-- Main Menu Start --> */}
-        <div className="container z-2 py-7.5  flex flex-row items-center justify-between">
+        <div className="container z-2 py-[15px] xl:py-[30px] lg:px-[30px]   flex flex-row items-center justify-between">
             {/* <!-- Logo Start --> */}
             <a href="./">
-                <Image src={logo} className='h-[26px]' alt="logo" />
+                <Image src={logo} className='h-[20px] lg:h-[26px]' alt="logo" />
             </a>
             {/* <!-- Logo End --> */}
 
             
             
-            <div className='flex flex-row justify-between'>
+            <div className='xl:flex flex-row justify-between hidden'>
                 <ul  id="menu" className=' flex flex-row text-[16px]'>
                     <li ><a  href="./">Home</a></li>
                     <li ><a  href="/ourfleet">Our Fleet</a></li>
@@ -54,19 +54,23 @@ export default function Navbar() {
                 </ul>
             </div>
            
-        
-            <MyButton href="/contactus">Book A Rental</MyButton>
-
-            {
-                !open ?
-                <div className='p-[10px] bg-myorange hover:bg-myblack rounded-[8px] cursor-pointer' onClick={() => setOpen(true)}>
-                    <IoMenu  size={30} color='#FFF8F6' />
-                </div>
-                :
-                <div className='p-[10px] bg-myorange hover:bg-myblack  rounded-[8px] cursor-pointer' onClick={() => setOpen(false)}>
-                    <RxCrossCircled size={30} color='#FFF8F6' />
-                </div>
-            }
+            <div className='hidden xl:block'>
+                <MyButton  href="/contactus">Book A Rental</MyButton>
+            </div>
+            
+            <div className='mr-[15px] xl:hidden'>
+                {
+                    !open ?
+                    <div className='p-[10px] bg-myorange hover:bg-myblack rounded-[8px] cursor-pointer' onClick={() => setOpen(true)}>
+                        <IoMenu  size={30} color='#FFF8F6' />
+                    </div>
+                    :
+                    <div className='p-[10px] bg-myorange hover:bg-myblack  rounded-[8px] cursor-pointer' onClick={() => setOpen(false)}>
+                        <RxCrossCircled size={30} color='#FFF8F6' />
+                    </div>
+                }
+            </div>
+            
             
         </div>
          {/* <!-- Main Menu End --> */}
@@ -75,7 +79,7 @@ export default function Navbar() {
         {
             shouldRender &&
             <div
-                className={`mobile-menu bg-myblack  text-mywhite w-full absolute top-[116px] left-0
+                className={`mobile-menu bg-myblack  text-mywhite w-full absolute top-[80px] left-0
                     ${open ? 'animate-slide-down' : 'animate-slide-up'}
                 `}
             >
