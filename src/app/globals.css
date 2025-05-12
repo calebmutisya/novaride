@@ -13,6 +13,7 @@
   --color-myblack:#040401;
   --color-mywhite:#FFF8F6;
   --color-myorange:#FF3600;
+  --color-mygrey: #616161
 
   --breakpoint-sm: 640px;
   --breakpoint-md: 768px;
@@ -59,6 +60,16 @@ body {
 .container {
   max-width: 1280px;
   margin: 0 auto;
+}
+
+h3{
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+p{
+  font-size: 16px;
 }
 
 
@@ -148,3 +159,24 @@ body {
 }
 
 /* Navbar End */
+
+/* Footer Start */
+
+.main-footer p{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer-links li {
+  width: fit-content;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  transition: color 0.5s ease;
+}
+
+.footer-links li:hover{
+  color: var(--myorange);
+}
+
+/* Footer End */
