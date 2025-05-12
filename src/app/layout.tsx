@@ -30,7 +30,9 @@ export default function RootLayout({
         className={` ${epilogue.variable} ${dmSans.variable} antialiased`}
       >
         <Navbar />
-        {children}
+        <div className="min-h-[60vh]">
+          {children}
+        </div>
         <Footer />
       </body>
     </html>
