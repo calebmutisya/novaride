@@ -6,6 +6,7 @@
   --myorange: #FF3600;
   --mywhite: white;
   --myblack: #040401;
+  --mygrey: #616161;
 
 }
 
@@ -75,6 +76,7 @@ h3{
 
 p{
   font-size: 16px;
+  color: var(--mygrey);
 }
 
 

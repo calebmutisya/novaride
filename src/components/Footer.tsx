@@ -25,7 +25,7 @@ export default function Footer() {
 
               {/* <!-- About Footer Content Start --> */}
               <div >
-                <p>
+                <p style={{color: 'var(--mywhite)'}}>
                   Experience the ease and convenience of <br className='hidden lg:block'/> renting
                   a car with Novaride.
                 </p>
@@ -81,7 +81,7 @@ export default function Footer() {
           <div className='h-[1px] bg-mywhite'></div>
           {/* <!-- Footer Copyright Start --> */}
           <div className='py-[25px] flex justify-center'>
-              <p>© {new Date().getFullYear()} Novaride. All rights reserved.</p>
+              <p style={{color: 'var(--mywhite)'}}>© {new Date().getFullYear()} Novaride. All rights reserved.</p>
           </div>
           {/* <!-- Footer Copyright End --> */}
         </div>
