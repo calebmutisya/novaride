@@ -39,7 +39,7 @@ export default function Navbar() {
                 <ul  id="menu" className=' flex flex-row text-[16px]'>
                     <li ><a  href="./">Home</a></li>
                     <li ><a  href="/ourfleet">Our Fleet</a></li>
-                    <li className='dropdown'><a  href="/services" >Services</a>
+                    <li className='dropdown'><a  href="/" >Services</a>
                         <ul className='dropdown-items rounded-[16px]'>
                             <li ><a  href="/services/longtermhire">Long Term CarHire</a></li>
                             <li ><a  href="/services/chauffeurservice">Chauffer Driven Service</a></li>
@@ -88,7 +88,7 @@ export default function Navbar() {
                         <ul id="mobile-menu">
                             <li ><a  href="./">Home</a></li>
                             <li ><a  href="/ourfleet">Our Fleet</a></li>
-                            <li ><a  href="/services">Services</a>
+                            <li ><a  href="/">Services</a>
                                 <ul >
                                     <li ><a  href="/services/longtermhire">Long Term CarHire</a></li>
                                     <li ><a  href="/services/chauffeurservice">Chauffer Driven Service</a></li>
