@@ -26,7 +26,7 @@ export default function Navbar() {
   return (
     <nav className=' text-myblack relative '>
         {/* <!-- Main Menu Start --> */}
-        <div className="container z-2 py-[15px] xl:py-[30px] lg:px-[30px]   flex flex-row items-center justify-between">
+        <div className="container z-6 py-[15px] xl:py-[30px] lg:px-[30px]   flex flex-row items-center justify-between">
             {/* <!-- Logo Start --> */}
             <a href="./">
                 <Image src={logo} className='h-[20px] lg:h-[26px]' alt="logo" />
@@ -79,7 +79,7 @@ export default function Navbar() {
         {
             shouldRender &&
             <div
-                className={`mobile-menu bg-myblack  text-mywhite w-full absolute top-[80px] left-0
+                className={`mobile-menu z-5 bg-myblack  text-mywhite w-full absolute top-[80px] left-0
                     ${open ? 'animate-slide-down' : 'animate-slide-up'}
                 `}
             >
