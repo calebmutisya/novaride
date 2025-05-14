@@ -7,6 +7,9 @@ import MyButton from '@/components/MyButton';
 
 import { FaStarOfLife } from "react-icons/fa";
 
+import services from '@/constants/services';
+import ServiceCard from '@/components/ServiceCard';
+
 export default function Home() {
   return (
     <div >
@@ -42,7 +45,7 @@ export default function Home() {
               </h3>
             </div>
             <div>
-              <h4 className='text-[28px] font-[500]'>
+              <h4 className='text-[28px] font-[700]'>
                 NovaRide, we consider ourselves an ongoing Kenyan Success Story.
               </h4>
               <p className='my-[20px]'>
@@ -73,6 +76,29 @@ export default function Home() {
         </div>
       </section>
       {/* About Me End */}
+
+      {/* Our services Start */}
+      <section className='container px-[15px] lg:px-[0px] py-[50px] lg:py-[100px] flex flex-col items-center'>
+        <div className='text-[16px] mb-[15px] text-myorange flex flex-row '>
+          <FaStarOfLife size={16} />
+          <h3 className='ml-[10px]' >
+            Our Services
+          </h3>
+        </div>
+        <h4 className='text-[28px] mb-[60px] lg:text-[44px] font-[700] text-center'>
+          Explore our wide range of
+          rental services
+        </h4>
+        <div>
+          <div className='flex flex-row flex-wrap lg:gap-[30px] justify-center'>
+            {services.map((service: any) => (
+              <ServiceCard key={service.id} service={service} />
+            ))}
+          </div>
+        </div>
+
+      </section>
+      {/* Our services End */}
     </div>
   );
 }
