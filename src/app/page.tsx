@@ -10,6 +10,7 @@ import { FaStarOfLife } from "react-icons/fa";
 import services from '@/constants/services';
 import ServiceCard from '@/components/ServiceCard';
 
+
 export default function Home() {
   return (
     <div >
@@ -59,7 +60,7 @@ export default function Home() {
                     <p>We Have Optimized The Booking Process So That Our Clients Can Experience The Easiest And The Safest Service</p>
                   </div>
                 </div>
-                <div  className='w-full h-[1px] my-[20px] bg-myblack'></div>
+                <div  className='w-full h-[1px] my-[20px] bg-gray-200'></div>
                 <div className='flex flex-row'>
                   <Image src={pickup} alt='booking' />
                   <div className='ml-[15px]'>
@@ -90,15 +91,30 @@ export default function Home() {
           rental services
         </h4>
         <div>
-          <div className='flex flex-row flex-wrap lg:gap-[30px] justify-center'>
+          <div className='flex flex-row flex-wrap gap-[15px] lg:gap-[30px] justify-center'>
             {services.map((service: any) => (
               <ServiceCard key={service.id} service={service} />
             ))}
           </div>
         </div>
-
       </section>
       {/* Our services End */}
+
+      {/* Our Fleets Start */}
+      <section className='container px-[15px] lg:px-[0px] py-[50px] lg:py-[100px] flex flex-col items-center'>
+        <div className='text-[16px] mb-[15px] text-myorange flex flex-row '>
+          <FaStarOfLife size={16} />
+          <h3 className='ml-[10px]' >
+            Our Fleet
+          </h3>
+        </div>
+        <h4 className='text-[28px] mb-[60px] lg:text-[44px] font-[700] text-center'>
+          Explore our perfect and
+          extensive fleet
+        </h4>
+
+      </section>
+      {/* Our Fleets End */}
     </div>
   );
 }
