@@ -8,7 +8,9 @@ import MyButton from '@/components/MyButton';
 import { FaStarOfLife } from "react-icons/fa";
 
 import services from '@/constants/services';
+import ourfleet from '@/constants/fleet';
 import ServiceCard from '@/components/ServiceCard';
+import CarCard from '@/components/CarCard';
 
 
 export default function Home() {
@@ -112,6 +114,13 @@ export default function Home() {
           Explore our perfect and
           extensive fleet
         </h4>
+        <div>
+          <div className='flex flex-row flex-wrap gap-[15px] lg:gap-[30px] justify-center'>
+            {ourfleet.map((car: any) => (
+              <CarCard key={car.id} car={car} />
+            ))}
+          </div>
+        </div>
 
       </section>
       {/* Our Fleets End */}

@@ -14,7 +14,7 @@ import vanguard from '../assets/car_images/toyota_vanguard.png'
 import voxy from '../assets/car_images/toyota_voxy.png'
 import fielder from '../assets/car_images/toyota_fielder.png'
 
-const ourFleet =[
+const ourfleet =[
     {
         id: 1,
         image: allion,
@@ -122,7 +122,7 @@ const ourFleet =[
         image: voxy,
         type: "Van",
         title: "Toyota Voxy",
-        capacity: "4",
+        capacity: "8",
         transmission: "Automatic",
         dailyprice: "5000",
     },
@@ -131,7 +131,7 @@ const ourFleet =[
         image: hiace,
         type: "Van",
         title: "Toyota Hiace",
-        capacity: "4",
+        capacity: "14",
         transmission: "Automatic",
         dailyprice: "5000",
     },
@@ -141,7 +141,7 @@ const ourFleet =[
         type: "Bus",
         title: "Isuzu Polo",
         capacity: "33",
-        transmission: "Automatic",
+        transmission: "Manual",
         dailyprice: "5000",
     },
     {
@@ -150,9 +150,9 @@ const ourFleet =[
         type: "Bus",
         title: "Sunwin Bus",
         capacity: "51",
-        transmission: "Automatic",
+        transmission: "Manual",
         dailyprice: "5000",
     }
 ]
 
-export default ourFleet
+export default ourfleet
