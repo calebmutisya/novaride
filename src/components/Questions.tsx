@@ -30,8 +30,8 @@ export default function Questions() {
 
   return (
     <div className="bg-bgsubtle">
-        <section className='container px-[15px] lg:px-[0px] py-[50px] lg:py-[100px] flex flex-col lg:flex-row lg:items-cente'>
-            <div className='w-[50%] hidden lg:block'>
+        <section className='container px-[15px] lg:px-[0px] py-[50px] lg:py-[100px] flex flex-col lg:flex-row lg:items-center'>
+            <div className='w-[100%] mb-[50px] lg:mb-[0px] lg:w-[50%] '>
                 <Image src={faqimage} alt="faqimage" />
             </div>
             <div className='px-[15px] w-[100%] lg:w-[50%]'>
