@@ -37,7 +37,7 @@ export default function Navbar() {
             
             <div className='xl:flex flex-row justify-between hidden'>
                 <ul  id="menu" className=' flex flex-row text-[16px]'>
-                    <li ><a  href="./">Home</a></li>
+                    <li ><a  href="/">Home</a></li>
                     <li ><a  href="/ourfleet">Our Fleet</a></li>
                     <li className='dropdown'><a  href="/" >Services</a>
                         <ul className='dropdown-items rounded-[16px]'>
@@ -86,7 +86,7 @@ export default function Navbar() {
                 <div>
                     <div className="mobile-menu-content container pl-[15px] py-[15px]">
                         <ul id="mobile-menu">
-                            <li ><a  href="./">Home</a></li>
+                            <li ><a  href="/">Home</a></li>
                             <li ><a  href="/ourfleet">Our Fleet</a></li>
                             <li ><a  href="/">Services</a>
                                 <ul >

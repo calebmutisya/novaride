@@ -8,9 +8,8 @@ import MyButton from '@/components/MyButton';
 import { FaStarOfLife } from "react-icons/fa";
 
 import services from '@/constants/services';
-import ourfleet from '@/constants/fleet';
 import ServiceCard from '@/components/ServiceCard';
-import CarCard from '@/components/CarCard';
+import CarCarousel from '@/components/CarCarousel';
 
 
 export default function Home() {
@@ -102,28 +101,9 @@ export default function Home() {
       </section>
       {/* Our services End */}
 
-      {/* Our Fleets Start */}
-      <section className='container px-[15px] lg:px-[0px] py-[50px] lg:py-[100px] flex flex-col items-center'>
-        <div className='text-[16px] mb-[15px] text-myorange flex flex-row '>
-          <FaStarOfLife size={16} />
-          <h3 className='ml-[10px]' >
-            Our Fleet
-          </h3>
-        </div>
-        <h4 className='text-[28px] mb-[60px] lg:text-[44px] font-[700] text-center'>
-          Explore our perfect and
-          extensive fleet
-        </h4>
-        <div>
-          <div className='flex flex-row flex-wrap gap-[15px] lg:gap-[30px] justify-center'>
-            {ourfleet.map((car: any) => (
-              <CarCard key={car.id} car={car} />
-            ))}
-          </div>
-        </div>
-
-      </section>
-      {/* Our Fleets End */}
+      {/* Our Fleet Start */}
+      <CarCarousel />
+      {/* Our Fleet End */}
     </div>
   );
 }

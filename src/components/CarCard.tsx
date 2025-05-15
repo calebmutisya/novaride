@@ -6,7 +6,7 @@ import { TbAutomaticGearbox } from "react-icons/tb";
 
 export default function CarCard({car}:{car: any}) {
   return (
-    <div className='p-[20px] w-[340px] rounded-[30px] border border-gray-200 cursor-pointer'>
+    <div className='p-[20px] rounded-[30px] border border-gray-200 cursor-pointer'>
         <div className='mb-[15px] w-[100%] h-[200px] relative'>
             <Image src={car.image} alt={car.title} layout='fill' objectFit='cover' />
         </div>
