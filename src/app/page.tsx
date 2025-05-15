@@ -10,6 +10,7 @@ import { FaStarOfLife } from "react-icons/fa";
 import services from '@/constants/services';
 import ServiceCard from '@/components/ServiceCard';
 import CarCarousel from '@/components/CarCarousel';
+import Questions from '@/components/Questions';
 
 
 export default function Home() {
@@ -106,7 +107,7 @@ export default function Home() {
       {/* Our Fleet End */}
 
       {/* FAQ Start */}
-      
+      <Questions />
       {/* FAQ End */}
     </div>
   );
