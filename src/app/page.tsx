@@ -104,6 +104,10 @@ export default function Home() {
       {/* Our Fleet Start */}
       <CarCarousel />
       {/* Our Fleet End */}
+
+      {/* FAQ Start */}
+      
+      {/* FAQ End */}
     </div>
   );
 }

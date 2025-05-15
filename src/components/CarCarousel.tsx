@@ -29,7 +29,7 @@ export default function CarCarousel() {
           extensive fleet
         </h4>
         <Swiper
-            spaceBetween={30}
+            spaceBetween={0}
             autoplay={{
             delay: 3000,
             disableOnInteraction: false,
@@ -55,7 +55,7 @@ export default function CarCarousel() {
         >
             {ourfleet.map((car: any) => (
             <SwiperSlide key={car.id}>
-                <div className="w-[320px] xl:w-[340px] mx-auto lg:mx-[0px] xl:ml-[15px]">
+                <div className="w-[320px] xl:w-[340px] mx-auto xl:mx-[15px]">
                     <CarCard car={car} />
                 </div>
             </SwiperSlide>
