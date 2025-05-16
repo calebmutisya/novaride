@@ -29,8 +29,8 @@ export default function Navbar() {
         {/* <!-- Main Menu Start --> */}
         <div className="container z-6 py-[15px] xl:py-[30px] lg:px-[30px]   flex flex-row items-center justify-between">
             {/* <!-- Logo Start --> */}
-            <Link href="./">
-                <Image src={logo} className='h-[20px] lg:h-[26px]' alt="logo" />
+            <Link href="/">
+                <Image src={logo} className='h-[20px] lg:h-[26px]' alt="logo" priority />
             </Link>
             {/* <!-- Logo End --> */}
 
