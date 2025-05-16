@@ -11,6 +11,7 @@ import services from '@/constants/services';
 import ServiceCard from '@/components/ServiceCard';
 import CarCarousel from '@/components/CarCarousel';
 import Questions from '@/components/Questions';
+import Testimonials from '@/components/Testimonials';
 
 
 export default function Home() {
@@ -109,6 +110,10 @@ export default function Home() {
       {/* FAQ Start */}
       <Questions />
       {/* FAQ End */}
+
+      {/* Testimonials Start */}
+      <Testimonials />
+      {/* Testimonials End */}
     </div>
   );
 }
