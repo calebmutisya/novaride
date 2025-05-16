@@ -1,6 +1,7 @@
 "use client"
 import React,{useState,useEffect} from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import logo from "../assets/images/logo.svg"
 
 import { IoMenu } from "react-icons/io5";
@@ -28,29 +29,27 @@ export default function Navbar() {
         {/* <!-- Main Menu Start --> */}
         <div className="container z-6 py-[15px] xl:py-[30px] lg:px-[30px]   flex flex-row items-center justify-between">
             {/* <!-- Logo Start --> */}
-            <a href="./">
+            <Link href="./">
                 <Image src={logo} className='h-[20px] lg:h-[26px]' alt="logo" />
-            </a>
+            </Link>
             {/* <!-- Logo End --> */}
 
-            
-            
             <div className='xl:flex flex-row justify-between hidden'>
                 <ul  id="menu" className=' flex flex-row text-[16px]'>
-                    <li ><a  href="/">Home</a></li>
-                    <li ><a  href="/ourfleet">Our Fleet</a></li>
-                    <li className='dropdown'><a  href="/" >Services</a>
+                    <li ><Link href="/">Home</Link></li>
+                    <li ><Link href="/ourfleet">Our Fleet</Link></li>
+                    <li className='dropdown'><Link href="/" >Services</Link>
                         <ul className='dropdown-items rounded-[16px]'>
-                            <li ><a  href="/services/longtermhire">Long Term CarHire</a></li>
-                            <li ><a  href="/services/chauffeurservice">Chauffer Driven Service</a></li>
-                            <li ><a  href="/services/airporttransfer">Airport Transfer Service</a></li>
-                            <li ><a  href="/services/weddingservices">Wedding Services</a></li>
+                            <li ><Link href="/services/longtermhire">Long Term CarHire</Link></li>
+                            <li ><Link href="/services/chauffeurservice">Chauffer Driven Service</Link></li>
+                            <li ><Link href="/services/airporttransfer">Airport Transfer Service</Link></li>
+                            <li ><Link href="/services/weddingservices">Wedding Services</Link></li>
                         </ul>
                     </li>
-                    <li ><a  href="/terms&conditions">Terms&Conditions</a></li>
-                    <li ><a  href="/aboutus">About Us</a></li>
-                    <li ><a  href="/faqs">FAQS</a></li>
-                    <li ><a  href="/contactus">Contact Us</a></li>
+                    <li ><Link href="/terms&conditions">Terms&Conditions</Link></li>
+                    <li ><Link href="/aboutus">About Us</Link></li>
+                    <li ><Link href="/faqs">FAQS</Link></li>
+                    <li ><Link href="/contactus">Contact Us</Link></li>
                 </ul>
             </div>
            
@@ -86,20 +85,20 @@ export default function Navbar() {
                 <div>
                     <div className="mobile-menu-content container pl-[15px] py-[15px]">
                         <ul id="mobile-menu">
-                            <li ><a  href="/">Home</a></li>
-                            <li ><a  href="/ourfleet">Our Fleet</a></li>
-                            <li ><a  href="/">Services</a>
+                            <li ><Link href="/">Home</Link></li>
+                            <li ><Link href="/ourfleet">Our Fleet</Link></li>
+                            <li ><Link href="/">Services</Link>
                                 <ul >
-                                    <li ><a  href="/services/longtermhire">Long Term CarHire</a></li>
-                                    <li ><a  href="/services/chauffeurservice">Chauffer Driven Service</a></li>
-                                    <li ><a  href="/services/airporttransfer">Airport Transfer Service</a></li>
-                                    <li ><a  href="/services/weddingservices">Wedding Services</a></li>
+                                    <li ><Link href="/services/longtermhire">Long Term CarHire</Link></li>
+                                    <li ><Link href="/services/chauffeurservice">Chauffer Driven Service</Link></li>
+                                    <li ><Link href="/services/airporttransfer">Airport Transfer Service</Link></li>
+                                    <li ><Link href="/services/weddingservices">Wedding Services</Link></li>
                                 </ul>
                             </li>
-                            <li ><a  href="/terms&conditions">Terms&Conditions</a></li>
-                            <li ><a  href="/aboutus">About Us</a></li>
-                            <li ><a  href="/faqs">FAQS</a></li>
-                            <li ><a  href="/contactus">Contact Us</a></li>
+                            <li ><Link href="/terms&conditions">Terms&Conditions</Link></li>
+                            <li ><Link href="/aboutus">About Us</Link></li>
+                            <li ><Link href="/faqs">FAQS</Link></li>
+                            <li ><Link href="/contactus">Contact Us</Link></li>
                         </ul>
                     </div>
                 </div>
@@ -108,3 +107,4 @@ export default function Navbar() {
     </nav>
   )
 }
+
