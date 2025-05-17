@@ -19,7 +19,7 @@ export default function Home() {
     <div >
       {/* Hero Start */}
       <section className='h-[70vh] md:h-[40vh] lg:h-[56vh] xl:h-[92vh] relative text-mywhite'>
-        <Image src={herobg} alt="hero" className='w-full h-full object-cover' />
+        <Image src={herobg} alt="hero" className='w-full h-full object-cover'  priority/>
         <div className='absolute top-0 left-0 w-full h-full bg-myblack opacity-50'></div>
         <div className=' absolute top-[20%] xl:top-[30%] w-full z-1 '>
           <div className='w-[90vw] lg:w-[80vw] mx-auto  flex flex-col items-center'>
