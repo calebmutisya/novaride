@@ -8,6 +8,7 @@ import Image from 'next/image'
 import { FaStarOfLife } from "react-icons/fa";
 
 import Testimonials from '@/components/Testimonials'
+import Vision from '@/components/Vision'
 
 export default function Aboutus() {
   return (
@@ -59,23 +60,7 @@ export default function Aboutus() {
       {/* About Me End */}
 
       {/* Vision Start */}
-      <div className='py-[50px] lg:py-[100px] flex flex-col items-center'>
-        <div className='text-[16px] mb-[15px] text-myorange flex flex-row '>
-          <FaStarOfLife size={16} />
-          <h3 className='ml-[10px]' >
-            Vision Mission
-          </h3>
-        </div>
-        <h4 className='text-[28px] mb-[60px] lg:text-[44px] font-[700] text-center'>
-          Driving excellence and innovation<br className='hidden lg:block'/> in car rental services
-        </h4>
-        <div>
-          <div>Our Mission</div>
-          <div>Our Vision</div>
-          <div>Our Approach</div>
-        </div>
-
-      </div>
+      <Vision />
       {/* Vision End */}
 
       <Testimonials />
