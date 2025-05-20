@@ -21,18 +21,18 @@ import phone from "../../assets/svg/icon-phone.svg"
 
 export default function Contactus() {
   return (
-    <section className='container py-[50px] lg:py-[100px] '>
+    <section className='container py-[50px] lg:py-[100px] lg:px-[15px]'>
       <div className='text-[16px] mb-[15px] text-myorange flex flex-row w-fit mx-auto '>
         <FaStarOfLife size={16} />
         <h3 className='ml-[10px]' >
           Contact Us
         </h3>
       </div>
-      <h4 className='text-[28px] font-[700] text-center'>
+      <h4 className='text-[28px] lg:text-[44px] font-[700] text-center'>
         Get In Touch
       </h4>
       <div className='flex flex-col lg:flex-row lg:justify-between py-[50px] lg:py-[100px] px-[15px] lg:px-[0px] '>
-        <div className='text-mywhite bg-myblack  p-[40px] rounded-[30px] min-w-[300px] max-w-[580px] h-fit '>
+        <div className='text-mywhite bg-myblack  p-[40px] rounded-[30px] min-w-[300px] lg:max-w-[40%] xl:max-w-[580px] h-fit '>
           <div className='mb-[50px] lg:mb-[100px]'>
             <h4 className='text-[28px] lg:text-[44px] font-[700] '>Contact Information</h4>
             <div className='mt-[15px]'>
@@ -74,7 +74,7 @@ export default function Contactus() {
             </ul>
           </div>
         </div>
-        <Form action="" className=' min-w-[300px] max-w-[680px]' >
+        <Form action="" className=' min-w-[300px] lg:max-w-[50%] xl:max-w-[680px] mt-[40px] lg:mt-[0px]' >
           <div className='flex flex-wrap mb-[30px]'>
             <div className='px-[15px] mb-[24px] w-[100%] lg:w-[50%] '>
               <h6>First Name</h6>
@@ -99,10 +99,24 @@ export default function Contactus() {
           </div>
           <MyButton href="#">Send Message</MyButton>
           <div className='flex flex-row justify-end'>
-            <Image src={formplan} alt='' className='w-[70%]'/>
+            <Image src={formplan} alt='' className='w-[50%]'/>
           </div>
-          
         </Form>
+      </div>
+
+      <div>
+        <div className='text-[16px] mb-[15px] text-myorange flex flex-row w-fit mx-auto '>
+          <FaStarOfLife size={16} />
+          <h3 className='ml-[10px]' >
+            Location
+          </h3>
+        </div>
+        <h4 className='text-[28px] lg:text-[44px] font-[700] text-center'>
+          How to Reach Our Location
+        </h4>
+        <div className="mt-[40px]">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127641.17044271911!2d36.764995635071365!3d-1.303035977979267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!5e0!3m2!1sen!2ske!4v1747761290022!5m2!1sen!2ske" width="100%" height="550" style={{border:0, borderRadius:'30px'}}  loading="lazy" ></iframe>
+        </div>
 
       </div>
       
