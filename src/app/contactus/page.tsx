@@ -31,8 +31,8 @@ export default function Contactus() {
       <h4 className='text-[28px] font-[700] text-center'>
         Get In Touch
       </h4>
-      <div className='flex flex-col lg:flex-row py-[50px] lg:py-[100px] px-[15px] lg:px-[0px] '>
-        <div className='text-mywhite bg-myblack  p-[40px] rounded-[30px] min-w-[300px] max-w-[480px]'>
+      <div className='flex flex-col lg:flex-row lg:justify-between py-[50px] lg:py-[100px] px-[15px] lg:px-[0px] '>
+        <div className='text-mywhite bg-myblack  p-[40px] rounded-[30px] min-w-[300px] max-w-[580px] h-fit '>
           <div className='mb-[50px] lg:mb-[100px]'>
             <h4 className='text-[28px] lg:text-[44px] font-[700] '>Contact Information</h4>
             <div className='mt-[15px]'>
@@ -44,7 +44,7 @@ export default function Contactus() {
             <li className='flex flex-row gap-[10px] mb-[30px] items-center'>
               <Image src={location} alt="location" className='w-[26px] lg:w-[40px]' /> 
               <div>
-                Harambe Streett, Nairobi, Kenya
+                Harambee Street, Nairobi, Kenya
               </div>
             </li>
 
@@ -67,15 +67,41 @@ export default function Contactus() {
           <div className='mt-[50px]'>
             <ul className='footer-links flex flex-row gap-[20px] xl:gap-[16px]'>
               <li><a className='w-[36px] h-[36px] flex items-center justify-center rounded-[50%] border border-mywhite hover:border-myorange' href='https://www.facebook.com/' target='blank'><BsFacebook size={16} className='hover:text-myorange' /></a></li>
-              <li><a className='w-[36px] h-[36px] flex items-center justify-center rounded-[50%] border border-mywhite hover:border-myorange' href='https://www.twitter.com/' ><BsTwitterX size={16} className='hover:text-myorange'/></a></li>
-              <li><a className='w-[36px] h-[36px] flex items-center justify-center rounded-[50%] border border-mywhite hover:border-myorange' href='https://www.instagram.com/'><BsInstagram size={16} className='hover:text-myorange'/></a></li>
-              <li><a className='w-[36px] h-[36px] flex items-center justify-center rounded-[50%] border border-mywhite hover:border-myorange' href='https://www.linkedin.com/'><BsLinkedin size={16} className='hover:text-myorange'/></a></li>
-              <li><a className='w-[36px] h-[36px] flex items-center justify-center rounded-[50%] border border-mywhite hover:border-myorange' href='https://www.youtube.com/'><BsYoutube size={16} className='hover:text-myorange'/></a></li>
+              <li><a className='w-[36px] h-[36px] flex items-center justify-center rounded-[50%] border border-mywhite hover:border-myorange' href='https://www.twitter.com/' target='blank' ><BsTwitterX size={16} className='hover:text-myorange'/></a></li>
+              <li><a className='w-[36px] h-[36px] flex items-center justify-center rounded-[50%] border border-mywhite hover:border-myorange' href='https://www.instagram.com/' target='blank'><BsInstagram size={16} className='hover:text-myorange'/></a></li>
+              <li><a className='w-[36px] h-[36px] flex items-center justify-center rounded-[50%] border border-mywhite hover:border-myorange' href='https://www.linkedin.com/' target='blank'><BsLinkedin size={16} className='hover:text-myorange'/></a></li>
+              <li><a className='w-[36px] h-[36px] flex items-center justify-center rounded-[50%] border border-mywhite hover:border-myorange' href='https://www.youtube.com/' target='blank'><BsYoutube size={16} className='hover:text-myorange'/></a></li>
             </ul>
           </div>
         </div>
-        <Form action="" >
-          <input type="text" placeholder='First Name' className='my-[10px] p-[10px] w-[100%] border border-gray-200 outline-none'  />
+        <Form action="" className=' min-w-[300px] max-w-[680px]' >
+          <div className='flex flex-wrap mb-[30px]'>
+            <div className='px-[15px] mb-[24px] w-[100%] lg:w-[50%] '>
+              <h6>First Name</h6>
+              <input type="text" placeholder='Enter First Name' className='my-[10px] py-[12px] w-[100%] border-b border-gray-200 outline-none'  />
+            </div>
+            <div className='px-[15px] mb-[24px] w-[100%] lg:w-[50%]'>
+              <h6>Last Name</h6>
+              <input type="text" placeholder='Enter Last Name' className='my-[10px] py-[12px] w-[100%] border-b border-gray-200 outline-none'  />
+            </div>
+            <div className='px-[15px] mb-[24px] w-[100%] lg:w-[50%]'>
+              <h6>Email</h6>
+              <input type="text" placeholder='Enter Email' className='my-[10px] py-[12px] w-[100%] border-b border-gray-200 outline-none'  />
+            </div>
+            <div className='px-[15px] mb-[24px] w-[100%] lg:w-[50%]'>
+              <h6>Phone</h6>
+              <input type="text" placeholder='Enter Number' className='my-[10px] py-[12px] w-[100%] border-b border-gray-200 outline-none'  />
+            </div>
+          </div>
+          <div className='px-[15px] mb-[24px]'>
+            <h6>Message</h6>
+            <textarea placeholder='Enter Message' className='my-[10px] h-[96px] py-[12px] w-[100%] border-b border-gray-200 outline-none'  />
+          </div>
+          <MyButton href="#">Send Message</MyButton>
+          <div className='flex flex-row justify-end'>
+            <Image src={formplan} alt='' className='w-[70%]'/>
+          </div>
+          
         </Form>
 
       </div>
