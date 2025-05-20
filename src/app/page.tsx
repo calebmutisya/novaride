@@ -1,103 +1,119 @@
-import Image from "next/image";
+import Image from 'next/image';
+import herobg from '../assets/images/hero-bg.jpg'
+import abouimg from '../assets/images/aboutme_1.png'
+import booking from '../assets/svg/booking.svg'
+import pickup from '../assets/svg/pickup.svg'
+import MyButton from '@/components/MyButton';
+
+import { FaStarOfLife } from "react-icons/fa";
+
+import services from '@/constants/services';
+import ServiceCard from '@/components/ServiceCard';
+import CarCarousel from '@/components/CarCarousel';
+import Questions from '@/components/Questions';
+import Testimonials from '@/components/Testimonials';
+
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div >
+      {/* Hero Start */}
+      <section className='h-[70vh] md:h-[40vh] lg:h-[56vh] xl:h-[92vh] relative text-mywhite'>
+        <Image src={herobg} alt="hero" className='w-full h-full object-cover'  priority/>
+        <div className='absolute top-0 left-0 w-full h-full bg-myblack opacity-50'></div>
+        <div className=' absolute top-[20%] xl:top-[30%] w-full z-1 '>
+          <div className='w-[90vw] lg:w-[80vw] mx-auto  flex flex-col items-center'>
+            <div className='text-[30px] lg:text-[42px] xl:text-[74px] text-center font-bold '>
+            Your Trusted Car Rental Partner
+            </div>
+            <div className='mt-[10px] w-[90%] lg:w-[60%] text-[18px] text-center mb-[30px]'>
+            Whether you're planning a weekend getaway, a business trip, or just need a reliable ride for the day, we offer a wide range of vehicles to suit your needs.
+            </div>
+            <MyButton href={'/contactus'}>Make a Reservation</MyButton>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+      {/* Hero End */}
+
+      {/* About Us Start */}
+      <section className='container '>
+        <div className='py-[50px] lg:py-[100px] flex flex-col lg:flex-row'>
+          <div className='w-[500px] hidden lg:block'>
+            <Image src={abouimg} alt='about' className=' rounded-[12px]'/>
+          </div>
+          <div className='px-[15px] lg:w-[65%]'>
+            <div className='text-[16px] mb-[15px] text-myorange flex flex-row '>
+              <FaStarOfLife size={16} />
+              <h3 className='ml-[10px]' >
+                About Us
+              </h3>
+            </div>
+            <div>
+              <h4 className='text-[28px] font-[700]'>
+                NovaRide, we consider ourselves an ongoing Kenyan Success Story.
+              </h4>
+              <p className='my-[20px]'>
+              NovaRide Car Hire Services is a reputable family business based in Nairobi. We strive for nothing short of perfection in our service delivery. We are renown for our superb and well-maintained fleet of cars available for you to rent. Moreover, we also offer chauffeur driven and VIP services to our clients.
+              </p>
+              <div className='mb-[40px]'>
+                <div className='flex flex-row '>
+                  <Image src={booking} alt='booking' />
+                  <div className='ml-[15px]'>
+                    <h5 className='text-[20px] font-[600] mb-[10px]'>Easy Booking</h5>
+                    <p>We Have Optimized The Booking Process So That Our Clients Can Experience The Easiest And The Safest Service</p>
+                  </div>
+                </div>
+                <div  className='w-full h-[1px] my-[20px] bg-gray-200'></div>
+                <div className='flex flex-row'>
+                  <Image src={pickup} alt='booking' />
+                  <div className='ml-[15px]'>
+                    <h5 className='text-[20px] font-[600] mb-[10px]'>Convenient Pick-Up & Return Process</h5>
+                    <p>We Have Optimised The Pick-up And Return Process So That Our Clients Can Experience The Easiest And The Safest Service</p>
+                  </div>
+                </div>
+              </div>
+
+              <MyButton href={'/contactus'}>Contact Us</MyButton>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* About Me End */}
+
+      {/* Our services Start */}
+      <section className='container px-[15px] lg:px-[0px] py-[50px] lg:py-[100px] flex flex-col items-center'>
+        <div className='text-[16px] mb-[15px] text-myorange flex flex-row '>
+          <FaStarOfLife size={16} />
+          <h3 className='ml-[10px]' >
+            Our Services
+          </h3>
+        </div>
+        <h4 className='text-[28px] mb-[60px] lg:text-[44px] font-[700] text-center'>
+          Explore our wide range of
+          rental services
+        </h4>
+        <div>
+          <div className='flex flex-row flex-wrap gap-[15px] lg:gap-[30px] justify-center'>
+            {services.map((service: any) => (
+              <ServiceCard key={service.id} service={service} />
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* Our services End */}
+
+      {/* Our Fleet Start */}
+      <CarCarousel />
+      {/* Our Fleet End */}
+
+      {/* FAQ Start */}
+      <Questions />
+      {/* FAQ End */}
+
+      {/* Testimonials Start */}
+      <Testimonials />
+      {/* Testimonials End */}
     </div>
   );
 }
