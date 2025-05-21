@@ -6,7 +6,7 @@ import { FaStarOfLife } from "react-icons/fa";
 import MyButton from '@/components/MyButton';
 import CarCarousel from '@/components/CarCarousel'
 
-export default function Weddingservice() {
+export default function Airporttransfer() {
   return (
     <section className='container py:50px lg:py-[100px]'>
       <div className=' flex flex-col lg:flex-row lg:justify-between px-[15px] lg:px-[0px]'>
