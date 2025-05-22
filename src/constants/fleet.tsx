@@ -22,7 +22,7 @@ const ourfleet =[
         title: "Toyota Allion",
         capacity: "4",
         transmission: "Automatic",
-        dailyprice: "5000",
+        dailyprice: "4500",
     },
     {
         id: 2,
@@ -31,7 +31,7 @@ const ourfleet =[
         title: "Toyota Axio",
         capacity: "4",
         transmission: "Automatic",
-        dailyprice: "5000",
+        dailyprice: "4500",
     },
     {
         id: 3,
@@ -69,7 +69,7 @@ const ourfleet =[
         title: "Toyota Harrier",
         capacity: "4",
         transmission: "Automatic",
-        dailyprice: "5000",
+        dailyprice: "10000",
     },
     {
         id: 7,
@@ -78,7 +78,7 @@ const ourfleet =[
         title: "Toyota Rav 4",
         capacity: "4",
         transmission: "Automatic",
-        dailyprice: "5000",
+        dailyprice: "7500",
     },
     {
         id: 8,
@@ -87,7 +87,7 @@ const ourfleet =[
         title: "Toyota Vanguard",
         capacity: "4",
         transmission: "Automatic",
-        dailyprice: "5000",
+        dailyprice: "6500",
     },
     {
         id: 9,
@@ -96,7 +96,7 @@ const ourfleet =[
         title: "Mazda CX5",
         capacity: "4",
         transmission: "Automatic",
-        dailyprice: "5000",
+        dailyprice: "8500",
     },
     {
         id: 10,
@@ -105,7 +105,7 @@ const ourfleet =[
         title: "Toyota Hilux",
         capacity: "4",
         transmission: "Automatic",
-        dailyprice: "5000",
+        dailyprice: "10000",
     },  
     {
         id: 11,
@@ -114,7 +114,7 @@ const ourfleet =[
         title: "Ford F150",
         capacity: "4",
         transmission: "Automatic",
-        dailyprice: "5000",
+        dailyprice: "15000",
     },
     
     {
@@ -124,7 +124,7 @@ const ourfleet =[
         title: "Toyota Voxy",
         capacity: "8",
         transmission: "Automatic",
-        dailyprice: "5000",
+        dailyprice: "13000",
     },
     {
         id: 13,
@@ -133,7 +133,7 @@ const ourfleet =[
         title: "Toyota Hiace",
         capacity: "14",
         transmission: "Automatic",
-        dailyprice: "5000",
+        dailyprice: "15000",
     },
     {
         id: 14,
@@ -142,7 +142,7 @@ const ourfleet =[
         title: "Isuzu Polo",
         capacity: "33",
         transmission: "Manual",
-        dailyprice: "5000",
+        dailyprice: "25000",
     },
     {
         id: 15,
@@ -151,7 +151,7 @@ const ourfleet =[
         title: "Sunwin Bus",
         capacity: "51",
         transmission: "Manual",
-        dailyprice: "5000",
+        dailyprice: "35000",
     }
 ]
 

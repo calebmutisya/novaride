@@ -64,7 +64,7 @@ export default function Faqs() {
           Fuel & Insurance
         </div>
         <div className='text-[16px] font-[400] bg-bgsubtle py-[10px] px-[20px] rounded-[99px] cursor-pointer hover:bg-myblack hover:text-mywhite transition duration-500 ease-in-out '
-        onClick={() => document.getElementById('insurance')?.scrollIntoView({ behavior: 'smooth' })}
+        onClick={() => document.getElementById('fuelandinsurance')?.scrollIntoView({ behavior: 'smooth' })}
         >
           Insurance
         </div>

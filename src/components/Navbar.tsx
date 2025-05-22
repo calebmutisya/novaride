@@ -85,20 +85,20 @@ export default function Navbar() {
                 <div>
                     <div className="mobile-menu-content container pl-[15px] py-[15px]">
                         <ul id="mobile-menu">
-                            <li ><Link href="/">Home</Link></li>
-                            <li ><Link href="/ourfleet">Our Fleet</Link></li>
-                            <li ><Link href="/">Services</Link>
+                            <li ><Link href="/" onClick={() => setOpen(false)}>Home</Link></li>
+                            <li ><Link href="/ourfleet" onClick={() => setOpen(false)}>Our Fleet</Link></li>
+                            <li ><Link href="/" onClick={() => setOpen(false)}>Services</Link>
                                 <ul >
-                                    <li ><Link href="/services/longtermhire">Long Term CarHire</Link></li>
-                                    <li ><Link href="/services/chauffeurservice">Chauffer Driven Service</Link></li>
-                                    <li ><Link href="/services/airporttransfer">Airport Transfer Service</Link></li>
-                                    <li ><Link href="/services/weddingservices">Wedding Services</Link></li>
+                                    <li ><Link href="/services/longtermhire" onClick={() => setOpen(false)}>Long Term CarHire</Link></li>
+                                    <li ><Link href="/services/chauffeurservice" onClick={() => setOpen(false)}>Chauffer Driven Service</Link></li>
+                                    <li ><Link href="/services/airporttransfer" onClick={() => setOpen(false)}>Airport Transfer Service</Link></li>
+                                    <li ><Link href="/services/weddingservices" onClick={() => setOpen(false)}>Wedding Services</Link></li>
                                 </ul>
                             </li>
-                            <li ><Link href="/terms&conditions">Terms&Conditions</Link></li>
-                            <li ><Link href="/aboutus">About Us</Link></li>
-                            <li ><Link href="/faqs">FAQS</Link></li>
-                            <li ><Link href="/contactus">Contact Us</Link></li>
+                            <li ><Link href="/terms&conditions" onClick={() => setOpen(false)}>Terms&Conditions</Link></li>
+                            <li ><Link href="/aboutus" onClick={() => setOpen(false)}>About Us</Link></li>
+                            <li ><Link href="/faqs" onClick={() => setOpen(false)}>FAQS</Link></li>
+                            <li ><Link href="/contactus" onClick={() => setOpen(false)}>Contact Us</Link></li>
                         </ul>
                     </div>
                 </div>
