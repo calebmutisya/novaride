@@ -1,7 +1,7 @@
-import author1 from '../assets/images/author-1.png'
-import author2 from '../assets/images/author-2.png'
-import author3 from '../assets/images/author-3.png' 
-import author4 from '../assets/images/author-4.png'
+import author1 from '../assets/images/author-1.webp'
+import author2 from '../assets/images/author-2.webp'
+import author3 from '../assets/images/author-3.webp' 
+import author4 from '../assets/images/author-4.webp'
 
 const testimonies = [
     {

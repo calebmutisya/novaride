@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import herobg from '../assets/images/hero-bg.jpg'
-import abouimg from '../assets/images/aboutme_1.png'
+import herobg from '../assets/images/hero-bg.webp'
+import aboutimg from '../assets/images/aboutme_1.webp'
 import booking from '../assets/svg/booking.svg'
 import pickup from '../assets/svg/pickup.svg'
 import MyButton from '@/components/MyButton';
@@ -39,7 +39,7 @@ export default function Home() {
       <section className='container '>
         <div className='py-[50px] lg:py-[100px] flex flex-col lg:flex-row'>
           <div className='w-[500px] hidden lg:block'>
-            <Image src={abouimg} alt='about' className=' rounded-[12px]'/>
+            <Image src={aboutimg} alt='about' className=' rounded-[12px]'/>
           </div>
           <div className='px-[15px] lg:w-[65%]'>
             <div className='text-[16px] mb-[15px] text-myorange flex flex-row '>

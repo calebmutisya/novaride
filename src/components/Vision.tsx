@@ -4,9 +4,9 @@ import Image from 'next/image';
 import { FaStarOfLife } from "react-icons/fa";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 
-import approach from "../assets/images/our-approach-img.png"
-import mission from "../assets/images/our-mission-img.png"
-import vision from "../assets/images/our-vision-img.png"
+import approach from "../assets/images/our-approach-img.webp"
+import mission from "../assets/images/our-mission-img.webp"
+import vision from "../assets/images/our-vision-img.webp"
 
 
 const content = [
@@ -83,7 +83,7 @@ export default function Vision() {
         <h4 className='text-[28px] mb-[60px] lg:text-[44px] font-[700] text-center'>
             Driving excellence and innovation<br className='hidden lg:block'/> in car rental services
         </h4>
-        <div className='p-[15px] flex flex-wrap justify-center gap-[10px] lg:gap-[10px] lg:gap-[25px] bg-bgsubtle rounded-[100px]'>
+        <div className='p-[15px] flex flex-wrap justify-center gap-[10px]  lg:gap-[25px] bg-bgsubtle rounded-[100px]'>
             <div className={`${active === 1 ? 'bg-myorange text-mywhite' : 'bg-white'} py-[15px] px-[30px] rounded-[100px] font-[700] cursor-pointer hover:bg-myorange hover:text-mywhite transition duration-500 ease-in-out`} onClick={() => handleActive(1)}>
                 Our Vision
             </div>

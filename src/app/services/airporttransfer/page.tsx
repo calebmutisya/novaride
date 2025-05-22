@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import airport from '../../../assets/images/airport.png'
+import airport from '../../../assets/images/airport.webp'
 
 import { FaStarOfLife } from "react-icons/fa";
 import MyButton from '@/components/MyButton';
