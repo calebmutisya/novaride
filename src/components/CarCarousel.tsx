@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import ourfleet from '@/constants/fleet'
+import ourfleet, { Fleet } from '@/constants/fleet'
 import CarCard from './CarCard'
 import { FaStarOfLife } from "react-icons/fa";
 
@@ -53,10 +53,10 @@ export default function CarCarousel() {
                 },
             }}
         >
-            {ourfleet.map((car: any) => (
+            {ourfleet.map((car: Fleet) => (
             <SwiperSlide key={car.id}>
                 <div className="w-[320px] xl:w-[340px] mx-auto xl:mx-[15px]">
-                    <CarCard car={car} />
+                    <CarCard car={car}  />
                 </div>
             </SwiperSlide>
             ))}

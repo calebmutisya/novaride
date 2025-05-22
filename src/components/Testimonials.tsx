@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import { FaStarOfLife } from "react-icons/fa";
 
-import testimonies from '@/constants/testimony'
+import testimonies, { Testimony } from '@/constants/testimony'
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -78,7 +78,7 @@ export default function Testimonials() {
                 },
             }}
         >
-            { testimonies.map((testimony: any, index) => (
+            { testimonies.map((testimony: Testimony, index) => (
                 <SwiperSlide key={index}>
                     {/* Testimony Card Start */}
                     <div className='border border-gray-200 rounded-[15px] lg:rounded-[30px] p-[10px] lg:p-[20px] w-[355px] xl:w-[394px] mx-auto xl:mx-[15px]'>

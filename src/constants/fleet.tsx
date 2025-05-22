@@ -13,6 +13,18 @@ import rav4 from '../assets/car_images/toyota_rav4.webp'
 import vanguard from '../assets/car_images/toyota_vanguard.webp'
 import voxy from '../assets/car_images/toyota_voxy.webp'
 import fielder from '../assets/car_images/toyota_fielder.webp'
+import { StaticImageData } from 'next/image'
+
+export type Fleet = {
+    id: number;
+    image: StaticImageData;
+    type: string;
+    title: string;
+    capacity: string;
+    transmission: string;
+    dailyprice: string;
+}
+
 
 const ourfleet =[
     {

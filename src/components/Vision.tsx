@@ -7,6 +7,21 @@ import { IoIosCheckmarkCircle } from "react-icons/io";
 import approach from "../assets/images/our-approach-img.webp"
 import mission from "../assets/images/our-mission-img.webp"
 import vision from "../assets/images/our-vision-img.webp"
+import type { StaticImageData } from 'next/image';
+
+
+export type Content = {
+    id: number;
+    img: StaticImageData;
+    title: string;
+    main_slogan: string;
+    content: string;
+    slogans: {
+        id: number;
+        quote: string;
+    }[];
+}
+
 
 
 const content = [

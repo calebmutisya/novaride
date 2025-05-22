@@ -2,8 +2,18 @@ import author1 from '../assets/images/author-1.webp'
 import author2 from '../assets/images/author-2.webp'
 import author3 from '../assets/images/author-3.webp' 
 import author4 from '../assets/images/author-4.webp'
+import type { StaticImageData } from 'next/image';
 
-const testimonies = [
+
+export type Testimony = {
+    rating: number,
+    name: string,
+    occupation: string,
+    testimony: string,
+    image: StaticImageData
+}
+
+const testimonies: Testimony[] = [
     {
         rating: 4.5,
         name: "Lydia Gibson",
