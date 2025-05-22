@@ -4,6 +4,8 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+import NextTopLoader from "nextjs-toploader";
+
 const epilogue = Epilogue({
   variable: "--font-epilogue",
   subsets: ["latin"],
@@ -29,6 +31,7 @@ export default function RootLayout({
       <body
         className={` ${epilogue.variable} ${dmSans.variable} antialiased`}
       >
+        <NextTopLoader showSpinner={false} color="#FF3600" />
         <Navbar />
         <div className="min-h-[60vh]">
           {children}
