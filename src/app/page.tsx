@@ -7,7 +7,7 @@ import MyButton from '@/components/MyButton';
 
 import { FaStarOfLife } from "react-icons/fa";
 
-import services from '@/constants/services';
+import services, { Service } from '@/constants/services';
 import ServiceCard from '@/components/ServiceCard';
 import CarCarousel from '@/components/CarCarousel';
 import Questions from '@/components/Questions';
@@ -17,7 +17,7 @@ import Testimonials from '@/components/Testimonials';
 export default function Home() {
   return (
     <div >
-      {/* Hero Start */}
+      
       <section className='h-[70vh] md:h-[40vh] lg:h-[56vh] xl:h-[92vh] relative text-mywhite'>
         <Image src={herobg} alt="hero" className='w-full h-full object-cover'  priority/>
         <div className='absolute top-0 left-0 w-full h-full bg-myblack opacity-50'></div>
@@ -33,9 +33,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* Hero End */}
-
-      {/* About Us Start */}
+      
       <section className='container '>
         <div className='py-[50px] lg:py-[100px] flex flex-col lg:flex-row'>
           <div className='w-[500px] hidden lg:block'>
@@ -79,9 +77,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* About Me End */}
-
-      {/* Our services Start */}
+      
       <section className='container px-[15px] lg:px-[0px] py-[50px] lg:py-[100px] flex flex-col items-center'>
         <div className='text-[16px] mb-[15px] text-myorange flex flex-row '>
           <FaStarOfLife size={16} />
@@ -95,25 +91,16 @@ export default function Home() {
         </h4>
         <div>
           <div className='flex flex-row flex-wrap gap-[15px] lg:gap-[30px] justify-center'>
-            {services.map((service: any) => (
+            {services.map((service: Service) => (
               <ServiceCard key={service.id} service={service} />
             ))}
           </div>
         </div>
       </section>
-      {/* Our services End */}
 
-      {/* Our Fleet Start */}
       <CarCarousel />
-      {/* Our Fleet End */}
-
-      {/* FAQ Start */}
       <Questions />
-      {/* FAQ End */}
-
-      {/* Testimonials Start */}
       <Testimonials />
-      {/* Testimonials End */}
     </div>
   );
 }

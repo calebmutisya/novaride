@@ -7,6 +7,21 @@ import { IoIosCheckmarkCircle } from "react-icons/io";
 import approach from "../assets/images/our-approach-img.webp"
 import mission from "../assets/images/our-mission-img.webp"
 import vision from "../assets/images/our-vision-img.webp"
+import type { StaticImageData } from 'next/image';
+
+
+export type Content = {
+    id: number;
+    img: StaticImageData;
+    title: string;
+    main_slogan: string;
+    content: string;
+    slogans: {
+        id: number;
+        quote: string;
+    }[];
+}
+
 
 
 const content = [
@@ -94,7 +109,7 @@ export default function Vision() {
                 Our Approach
             </div>
         </div>
-        {content.map((item, index) => (
+        {content.map((item, index: number) => (
             <div key={index} className={active === item.id ? 'px-[15px] lg:px-[15px] flex flex-col lg:flex-row lg:justify-between lg:items-center mt-[50px]' : 'hidden'}>
                 <div  className='w-[100%] lg:w-[50%]'>
                     <div className='text-[16px] mb-[15px] text-myorange flex flex-row '>
