@@ -1,5 +1,5 @@
 import React from 'react'
-import aboutimg from "../../assets/images/aboutme_1.png"
+import aboutimg from "../../assets/images/aboutme_1.webp"
 import booking from "../../assets/svg/booking.svg"
 import pickup from "../../assets/svg/pickup.svg"
 import MyButton from '@/components/MyButton'

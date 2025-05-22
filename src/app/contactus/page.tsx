@@ -4,8 +4,7 @@ import { FaStarOfLife } from "react-icons/fa";
 import Form from 'next/form'
 import MyButton from '@/components/MyButton';
 
-import formplan from "../../assets/images/contact-form-plan.png"
-import information from "../../assets/images/contact-information-bg.png"
+import formplan from "../../assets/images/contact-form-plan.webp"
 
 // Social Icons
 import { BsFacebook } from "react-icons/bs";

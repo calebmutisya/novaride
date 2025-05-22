@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import Image from 'next/image';
-import faqimage from '../assets/images/faqimage.png';
+import faqimage from '../assets/images/faqimage.webp';
 
 import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 import { FaStarOfLife } from "react-icons/fa";
