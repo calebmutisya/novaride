@@ -3,7 +3,7 @@ import { Epilogue, DM_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 import NextTopLoader from "nextjs-toploader";
 
 const epilogue = Epilogue({
@@ -37,6 +37,7 @@ export default function RootLayout({
           {children}
         </div>
         <Footer />
+        <ScrollToTopButton />
       </body>
     </html>
   );
