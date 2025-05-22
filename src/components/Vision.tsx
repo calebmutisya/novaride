@@ -109,7 +109,7 @@ export default function Vision() {
                 Our Approach
             </div>
         </div>
-        {content.map((item, index) => (
+        {content.map((item, index: number) => (
             <div key={index} className={active === item.id ? 'px-[15px] lg:px-[15px] flex flex-col lg:flex-row lg:justify-between lg:items-center mt-[50px]' : 'hidden'}>
                 <div  className='w-[100%] lg:w-[50%]'>
                     <div className='text-[16px] mb-[15px] text-myorange flex flex-row '>
