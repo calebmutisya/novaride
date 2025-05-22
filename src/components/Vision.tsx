@@ -4,9 +4,9 @@ import Image from 'next/image';
 import { FaStarOfLife } from "react-icons/fa";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 
-import approach from "../assets/images/our-approach-img.png"
-import mission from "../assets/images/our-mission-img.png"
-import vision from "../assets/images/our-vision-img.png"
+import approach from "../assets/images/our-approach-img.webp"
+import mission from "../assets/images/our-mission-img.webp"
+import vision from "../assets/images/our-vision-img.webp"
 
 
 const content = [
